@@ -1,0 +1,29 @@
+# Antigravity Template Gitignore
+
+# Windows thumbnails
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and databases
+*.log
+
+# Dependencies (if any)
+node_modules/
+vendor/
+
+# Temporary files
+tmp/
+*.tmp
+*.bak
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Antigravity specific (if necessary)
+# Usually we WANT to include .agent in this template, 
+# but users might want to ignore specific session logs if they exist.

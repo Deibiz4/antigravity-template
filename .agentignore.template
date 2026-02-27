@@ -1,0 +1,83 @@
+# .agentignore
+# Ubicación: raíz del proyecto (no dentro de .agent/)
+# Sintaxis igual que .gitignore
+
+# Dependencias
+node_modules/
+.npm/
+.pnp
+.pnp.js
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Ruby
+vendor/
+.bundle/
+
+# Rust
+target/
+.cargo/
+
+# Build output
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+coverage/
+.nyc_output/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+logs/
+
+# Secretos (nunca deben leerse)
+.env.local
+.env.*.local
+secrets/
+*.pem
+*.key
+
+# Binarios y multimedia
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.ico
+*.pdf
+*.mp3
+*.mp4
+*.zip
+*.tar.gz
+
+# Lock files (ruido sin valor)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+Cargo.lock
+Gemfile.lock
+
+# Git
+.git/

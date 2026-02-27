@@ -1,0 +1,27 @@
+name: Reporte de Error
+description: Reportar un problema con la plantilla o los workflows
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar un problema. Por favor, rellena la siguiente información.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del Problema
+      description: Explica qué sucede y qué esperabas que sucediera.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      description: ¿Cómo podemos ver el error nosotros mismos?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs de Antigravity
+      description: Copia cualquier error relevante de la terminal.

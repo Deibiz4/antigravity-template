@@ -1,0 +1,222 @@
+# 📋 Changelog
+
+Todos los cambios notables en este proyecto están documentados en este archivo.
+
+El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
+
+**Versionado**: Usamos [Semantic Versioning](https://semver.org/lang/es/).
+- MAJOR (1.0.0): Cambios incompatibles
+- MINOR (0.1.0): Nuevas funcionalidades compatibles
+- PATCH (0.0.1): Correcciones de bugs
+
+---
+
+## [Unreleased]
+
+### Added
+- [Pendiente de nuevas features]
+
+### Changed
+- [Pendiente de cambios]
+
+### Fixed
+- [Pendiente de correcciones]
+
+### Removed
+- [Pendiente de deprecaciones]
+
+### Security
+- [Pendiente de parches de seguridad]
+
+---
+
+## [1.0.0] - [Fecha de lanzamiento inicial]
+
+### Added
+- Configuración inicial de Antigravity
+- Sistema de logging automático en sesiones
+- Documentación estructurada (LOGS.md, CHANGELOG.md, MANUAL.md)
+- Archivo agent.md para configuración del agente
+- Archivo skills.md para patrones reutilizables
+- Archivo .claudeignore para optimizar tokens
+- Estructura de carpetas `.claude/` y `docs/`
+
+### Changed
+- [Cambios iniciales si aplican]
+
+### Fixed
+- [Correcciones iniciales si aplican]
+
+---
+
+## Plantilla para nuevas versiones
+
+```markdown
+## [X.Y.Z] - YYYY-MM-DD
+
+### Added
+- Nueva funcionalidad A
+- Nueva API endpoint B
+- Nuevo módulo C
+
+### Changed
+- Comportamiento modificado de X
+- Actualización de librería Y
+- Refactorización de función Z
+
+### Fixed
+- Corrección de bug en módulo A
+- Error de validación en B
+- Memory leak en C
+
+### Removed
+- Función deprecada X
+- Módulo obsoleto Y
+- API endpoint antiguo Z
+
+### Security
+- Parche de vulnerabilidad [CVE]
+- Validación mejorada en entrada de usuario
+```
+
+---
+
+## Comparar Versiones
+
+Para ver diferencias entre versiones, usa:
+```bash
+# Entre dos versiones específicas
+git diff v1.0.0..v1.0.1
+
+# Último commit de una versión
+git show v1.0.0:README.md
+```
+
+---
+
+## Reglas para este Changelog
+
+1. **Orden de secciones**: Added → Changed → Fixed → Removed → Security
+2. **Orden dentro de secciones**: Del más importante al menos importante
+3. **Gramática**: Usa indicativo, presente, imperativo o infinitivo
+4. **Brevedad**: Una línea por cambio, máximo 80 caracteres
+5. **Claridad**: Explica QUÉ cambió, no POR QUÉ (ese es el commit message)
+
+### Ejemplos buenos ✅
+```markdown
+### Added
+- Nueva autenticación con OAuth2
+- Soporte para múltiples idiomas
+- API REST completa con documentación
+
+### Fixed
+- Problema de renderizado en Safari
+- Error de validación de email
+```
+
+### Ejemplos malos ❌
+```markdown
+### Added
+- Implementamos OAuth que era necesario para el proyecto porque los clientes lo pedían
+- Se añadieron más idiomas
+
+### Fixed
+- Arreglamos el bug de Safari que causaba problemas
+```
+
+---
+
+## Notificación de Breaking Changes
+
+Cuando hay cambios que rompen compatibilidad:
+
+```markdown
+## [2.0.0] - 2024-01-15
+
+### ⚠️ BREAKING CHANGES
+- API v1 removida completamente, usar v2
+- Cambio de estructura de JSON en responses
+- Python 3.6 ya no soportado, requiere 3.7+
+
+### Changed
+- Response format completamente renovado
+- Estructura de carpetas reorganizada
+```
+
+---
+
+## Versionado de Dependencias
+
+### Cuando actualizar MAJOR
+```markdown
+### Changed
+- Actualizado Express 4.x → 5.x
+- Actualizado React 16.x → 18.x
+```
+
+### Cuando actualizar MINOR o PATCH
+```markdown
+### Fixed
+- Actualizado lodash para parche de seguridad
+```
+
+---
+
+## Cómo generar Releases desde esto
+
+Si usas GitHub:
+
+```bash
+# Tag una versión
+git tag -a v1.0.1 -m "Release version 1.0.1"
+git push origin v1.0.1
+
+# GitHub crea un release automático desde el changelog
+```
+
+---
+
+## Estadísticas
+
+| Métrica | Valor |
+|---------|-------|
+| Versiones liberadas | 1 |
+| Versión actual | 1.0.0 |
+| Última versión | [Fecha] |
+| Breaking changes | 0 |
+| Features totales | [número] |
+| Bugs corregidos | [número] |
+
+---
+
+## Roadmap (Opcional)
+
+Para versiones futuras planificadas:
+
+```markdown
+## Roadmap
+
+### v1.1.0 (Planned Q1 2024)
+- [ ] Autenticación mejorada
+- [ ] Caché distribuida
+- [ ] Documentación de API en Swagger
+
+### v2.0.0 (Planned Q2 2024)
+- [ ] Rediseño completo de UI
+- [ ] Migración a TypeScript
+- [ ] API v2 completamente nueva
+```
+
+---
+
+## Archivo Viejo
+
+Las versiones muy antiguas (>2 años) se pueden archivar en un archivo separado:
+- `CHANGELOG.archived.md`
+
+---
+
+**Generado por**: Antigravity 
+**Formato**: Markdown + Semantic Versioning  
+**Última actualización**: [Fecha]  
+**Próxima versión**: [Versión esperada]

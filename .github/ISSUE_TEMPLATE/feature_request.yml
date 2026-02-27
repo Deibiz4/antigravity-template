@@ -1,0 +1,22 @@
+name: Sugerencia de Funcionalidad
+description: Propón una nueva idea para la plantilla o un nuevo workflow
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Nos encantan las ideas nuevas! Comparte tu propuesta.
+  - type: textarea
+    id: idea
+    attributes:
+      label: ¿En qué consiste tu idea?
+      description: Describe tu propuesta de la forma más clara posible.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: ¿Qué beneficio aporta?
+      description: ¿Cómo optimizaría esto el trabajo de otros desarrolladores?
+    validations:
+      required: true

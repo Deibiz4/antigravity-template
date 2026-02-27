@@ -1,0 +1,76 @@
+# [REEMPLAZAR: Nombre del Proyecto]
+
+## Información del Proyecto
+
+- **Nombre**: [REEMPLAZAR: nombre del proyecto]
+- **Versión**: 1.0.0
+- **Stack**: [REEMPLAZAR: Node.js / Python / Rust / etc.]
+- **Propósito**: [REEMPLAZAR: descripción breve de qué hace este proyecto]
+
+## Comandos
+
+```bash
+# Desarrollo
+[REEMPLAZAR: npm run dev / python app.py / cargo run]
+
+# Tests
+[REEMPLAZAR: npm test / pytest / cargo test]
+
+# Build
+[REEMPLAZAR: npm run build / python setup.py / cargo build]
+```
+
+## Estructura de carpetas
+
+```
+[REEMPLAZAR: describe la estructura real de tu proyecto]
+src/
+├── [carpeta 1]    # descripción
+├── [carpeta 2]    # descripción
+└── [carpeta 3]    # descripción
+```
+
+## Variables de entorno
+
+```bash
+[REEMPLAZAR: lista las variables necesarias]
+PORT=3000
+DATABASE_URL=...
+API_KEY=...
+```
+
+## Convenciones de código
+
+[REEMPLAZAR: describe las convenciones de tu proyecto]
+
+- Nombrado de variables: camelCase / snake_case / PascalCase
+- Manejo de errores: [describe el patrón que usas]
+- Estructura de imports: [describe el orden]
+
+## Comportamiento esperado de Antigravity
+
+### Al iniciar una sesión
+- Lee `docs/LOGS.md` para entender el estado actual del proyecto.
+- Revisa `docs/CHANGELOG.md` para la versión vigente.
+- Respeta las convenciones de código definidas arriba.
+- Carga la skill `core` en `.agent/skills/core/SKILL.md`.
+
+### Durante el trabajo
+- Mantén consistencia con el código existente.
+- Confirma antes de hacer cambios destructivos o irreversibles.
+- No modifiques archivos en `.agent/` salvo solicitud explícita.
+
+### Al terminar una sesión
+- Utiliza `/log-session` para actualizar `docs/LOGS.md`.
+- Utiliza `/update-changelog` si hay cambios versionables en `docs/CHANGELOG.md`.
+- Utiliza `/document-feature` si hay funcionalidad nueva en `docs/MANUAL.md`.
+
+## Restricciones
+
+- No elimines archivos de documentación sin confirmar.
+- No cambies dependencias principales sin avisar.
+- Pregunta si un cambio requiere bumping de versión MAJOR.
+
+---
+
+*Última actualización: [REEMPLAZAR: fecha]*

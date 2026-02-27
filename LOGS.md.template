@@ -1,0 +1,159 @@
+# 📝 Log de Conversaciones y Sesiones
+
+Este archivo registra automáticamente cada sesión de trabajo, cambios realizados y notas importantes.
+
+**Última actualización**: [Fecha]
+**Total de sesiones**: 0
+
+---
+
+## Cómo leer este log
+
+- Cada sesión tiene un número secuencial
+- Los cambios están listados en orden cronológico
+- Los archivos modificados se indican claramente
+- Las notas especiales se marcan con emojis
+
+### Emojis usados
+- ✅ Sesión completada exitosamente
+- ⚠️ Problemas o advertencias
+- 🔧 Cambios técnicos importantes
+- 📚 Cambios de documentación
+- 🐛 Bugs corregidos
+- ✨ Nuevas features
+- 🔐 Cambios de seguridad
+
+---
+
+## Sesión #0 (Inicial)
+- **Fecha y Hora**: [Tu fecha]
+- **Duración**: Configuración inicial
+- **Cambios realizados**:
+  - Creada estructura de carpetas `.claude/`
+  - Configurado archivo `agent.md`
+  - Configurado archivo `skills.md`
+  - Configurado archivo `.claudeignore`
+  - Creados documentos de logging, changelog y manual
+- **Archivos modificados**: 7
+  - `CLAUDE.md`
+  - `.claudeignore`
+  - `.claude/commands/`
+  - `docs/LOGS.md`
+  - `docs/CHANGELOG.md`
+  - `docs/MANUAL.md`
+  - `README.md`
+- **Estado**: ✅ Completada
+- **Tokens aproximados usados**: N/A
+- **Próximos pasos**:
+  1. Revisar configuración
+  2. Personalizar agent.md según proyecto
+  3. Comenzar desarrollo
+
+---
+
+## Plantilla para nuevas sesiones
+
+```
+## Sesión #N
+- **Fecha y Hora**: [ISO 8601 Timestamp]
+- **Duración**: [minutos]
+- **Cambios realizados**:
+  - [Cambio 1]
+  - [Cambio 2]
+  - ...
+- **Archivos modificados**: [número]
+  - [archivo 1]
+  - [archivo 2]
+  - ...
+- **Líneas de código**:
+  - Añadidas: [número]
+  - Modificadas: [número]
+  - Eliminadas: [número]
+- **Problemas resueltos**:
+  - [Problema 1]: Solución
+  - [Problema 2]: Solución
+- **Estado**: ✅ Completada / ⚠️ Con problemas / 🔄 En progreso
+- **Tokens aproximados usados**: [número]
+- **Notas especiales**:
+  - [Cualquier nota importante]
+- **Próximos pasos**:
+  - [Qué hacer después]
+```
+
+---
+
+## Índice Rápido por Tema
+
+### Features añadidas
+- Sesión #[número]: [Feature X]
+- Sesión #[número]: [Feature Y]
+
+### Bugs corregidos
+- Sesión #[número]: [Bug X]
+- Sesión #[número]: [Bug Y]
+
+### Cambios de documentación
+- Sesión #[número]: [Cambio en docs]
+- Sesión #[número]: [Cambio en manual]
+
+---
+
+## Estadísticas
+
+| Métrica | Valor |
+|---------|-------|
+| Total de sesiones | 1 |
+| Promedio de duración | - |
+| Total de cambios | - |
+| Líneas añadidas | - |
+| Líneas eliminadas | - |
+| Bugs corregidos | 0 |
+| Features nuevas | 0 |
+| Tokens totales usados | - |
+
+---
+
+## Notas Importantes
+
+### Sistema de versionado
+Cuando hagas cambios significativos, se crean nuevas versiones:
+- MAJOR.MINOR.PATCH (semver)
+- Ver `docs/CHANGELOG.md` para detalles
+
+### Cómo usar este log
+1. Búscalo cuando necesites entender qué se ha hecho
+2. Úsalo como referencia para patrones anteriores
+3. Actualízalo al final de cada sesión
+4. Archívalo cuando llegues a 50+ sesiones
+
+### Archivado
+Cuando este archivo tenga muchas sesiones (50+):
+1. Mueve las sesiones antiguas a `docs/LOGS_ARCHIVED.md`
+2. Reinicia este archivo con sesiones recientes
+3. Mantén un índice en `docs/LOGS_ARCHIVED.md`
+
+---
+
+## Scripts de Utilidad
+
+### Ver últimas sesiones
+```bash
+# Últimas 5 sesiones
+tail -50 docs/LOGS.md
+```
+
+### Buscar por palabra clave
+```bash
+grep "Feature\|Bug\|Error" docs/LOGS.md
+```
+
+### Contar sesiones
+```bash
+grep "^## Sesión #" docs/LOGS.md | wc -l
+```
+
+---
+
+**Mantenido por**: Claude Code  
+**Formato**: Markdown  
+**Actualización**: Automática al final de cada sesión
